@@ -9,6 +9,10 @@ try:
     socket.connect((host,port))
     print("serveur connecté!!!")
 
+    data =" xxxxxxxxxxxxxxxxx"
+    data = data.encode("utf8")
+    socket.sendall(data)
+
 except:
     print("Connection erreur:::")
 finally:
